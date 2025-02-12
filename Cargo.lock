@@ -656,6 +656,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "http-content-server"
+version = "0.1.0"
+dependencies = [
+ "axum",
+ "crossbeam-channel",
+ "drone-network",
+ "infer",
+ "mime_guess",
+ "rayon",
+ "serde",
+ "tokio",
+ "toml",
+ "wg_2024",
+]
+
+[[package]]
 name = "httparse"
 version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1217,22 +1233,6 @@ name = "sync_wrapper"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0bf256ce5efdfa370213c1dabab5935a12e49f2c58d15e9eac2870d3b4f27263"
-
-[[package]]
-name = "testing"
-version = "0.1.0"
-dependencies = [
- "axum",
- "crossbeam-channel",
- "drone-network",
- "infer",
- "mime_guess",
- "rayon",
- "serde",
- "tokio",
- "toml",
- "wg_2024",
-]
 
 [[package]]
 name = "thiserror"
