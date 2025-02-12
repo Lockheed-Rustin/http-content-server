@@ -1,0 +1,93 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-image: url('/media/drone.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Makes sure the body takes up the full viewport height */
+    margin: 0; /* Removes default margin */
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.main .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main .flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Options: flex-start, center, flex-end, space-between, space-around */
+}
+
+.main .flex-box img {
+  padding: 20px;
+}
+
+/* Header */
+.main h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.main button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.main button:hover {
+    background: #0056b3;
+}
+
+/* Links */
+.main a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
+.main ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main li {
+    padding: 8px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    transition: color 0.3s ease;
+}
+
+.main li:hover {
+    color: #007bff;
+    cursor: pointer;
+}

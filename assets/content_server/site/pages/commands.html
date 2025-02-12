@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>Commands</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/styles/form.css">
+  <link rel="icon" type="image/x-icon" href="/media/logo.png">
+
+  <script src="/scripts/script.js"></script>
+</head>
+
+<body onload="loadHeader()">
+
+<div class="main">
+  <h1>
+    Drone commands
+  </h1>
+
+  <form action="javascript:crashDrone(id.value)">
+    <label for="id"><h1>Drone id:</h1></label>
+    <br/>
+    <input type="number" id="id" name="id" />
+    <br/>
+    <input type="submit" value="Crash drone" />
+  </form>
+
+  <form action="javascript:setPdr(pdr.value)">
+    <label for="pdr"><h1>Pdr:</h1></label>
+    <br/>
+    <input type="range" id="pdr" min="0" max="50" value="0">
+    <br/>
+    <input type="submit" value="Set pdr" />
+  </form>
+</div>
+
+</body>
+</html>

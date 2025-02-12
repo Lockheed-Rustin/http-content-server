@@ -1,0 +1,75 @@
+.file-tree-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.file-tree-container * {
+    all: unset; /* Prevent interference from outer styles */
+    display: revert;
+}
+
+.file-tree-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.file-tree ul { 
+    list-style-type: none; 
+    padding-left: 15px; 
+    margin: 0;
+}
+
+.file-tree .folder { 
+    cursor: pointer; 
+    font-weight: bold; 
+    display: flex; 
+    align-items: center; 
+    font-size: 1.2em; 
+    padding: 5px;
+}
+
+.file-tree .hidden { 
+    display: none; 
+}
+
+.file-tree .toggle::before { 
+    content: "▶"; 
+    display: inline-block; 
+    margin-right: 8px; 
+    font-size: 1em; 
+    transition: transform 0.2s ease;
+}
+
+.file-tree .expanded::before { 
+    content: "▼"; 
+}
+
+.file-tree li { 
+    padding: 5px 0; 
+    font-size: 1.1em; 
+    background: white;
+    margin: 2px 0;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.file-tree li:hover {
+    background: #e0e0e0;
+}
+
+.file-tree a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.file-tree a:hover {
+    text-decoration: underline;
+}

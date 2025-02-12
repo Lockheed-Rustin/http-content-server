@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <title>File List</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/styles/style.css">
+  <link rel="stylesheet" type="text/css" href="/styles/tree.css">
+  <link rel="icon" type="image/x-icon" href="/media/logo.png">
+
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/tree.js"></script>
+</head>
+
+<script>
+  function load() {
+    loadHeader();
+    fileTree();
+  }
+</script>
+
+<body onload="load()">
+
+<div class="main">
+  <h1>Files</h1>
+</div>
+<div class="file-tree-container">
+  <div id="fileTree" class="file-tree"></div>
+</div>
+
+</body>
+</html>
